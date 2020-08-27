@@ -34,3 +34,11 @@ _UIntOctal2 = 0o0001
 println("Octals: ", _UIntOctal1,"-",_UIntOctal2)
 println("Sizes: ",sizeof(_UIntOctal1),"-",sizeof(_UIntOctal2))
 println("Types: ", typeof(_UIntOctal1),"-",typeof(_UIntOctal2))
+
+_float1 = 1.0
+_float2 = 1.
+
+println("line 41: ",_float1==_float2) #prints true
+println("line 42: ", -.0 == 0.) #prints true
+println("line 43: ", big"15"+4) #big statement turns any value into big of that type (which uses more memory)
+println("line 44: size of big\"14\" is ", sizeof(big"14")) #prints 16, means 16 bytes
